@@ -20,6 +20,19 @@ npm run build    # production build into dist/
 
 ## Deploy to Amazon S3 (AWS Academy Learner Lab)
 
+Live at http://aidan-ferriera-portfolio.s3-website-us-east-1.amazonaws.com
+
+### With the deploy script
+
+1. Start the Learner Lab, open **AWS Details → AWS CLI → Show**, copy the block, then save it with
+   `mkdir -p ~/.aws && pbpaste > ~/.aws/credentials && chmod 600 ~/.aws/credentials`.
+   These credentials expire when the lab session ends.
+2. `npm run build && npm run deploy`
+
+`scripts/deploy-s3.mjs` uses the AWS SDK to create the bucket if needed, turn off Block Public Access, enable static website hosting, add a public-read bucket policy and upload `dist/`. Pass a different bucket name with `npm run deploy -- my-bucket-name`.
+
+### By hand in the AWS console
+
 1. `npm run build`
 2. Start the Learner Lab and open the AWS console, then go to **S3 → Create bucket**. Use a globally unique name, untick **Block all public access**, and confirm.
 3. In the bucket, go to **Properties → Static website hosting → Enable**. Set both the index document and the error document to `index.html`.
