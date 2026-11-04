@@ -14,7 +14,9 @@ export function toProjects(repos, details = {}) {
         url: repo.html_url,
         homepage: repo.homepage || null,
         updated: repo.pushed_at,
-        empty: repo.size === 0,
+        // GitHub computes size in the background, so a fresh push can still read 0.
+        // A truly empty repo also has no detected language.
+        empty: repo.size === 0 && !repo.language,
         featured: Boolean(extra.featured),
       }
     })

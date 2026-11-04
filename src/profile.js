@@ -25,7 +25,7 @@ export const profile = {
     },
     {
       label: 'Hackathon',
-      text: 'AWS Kiro Buildathon: built FireDataSite with a team, a website that puts the Washington fire dataset to work for a fire official.',
+      text: 'AWS Kiro Buildathon: built AfterFire with a team, a web app that helps Washington wildfire recovery officials track damage assessments and draft recovery reports.',
     },
     {
       label: 'Cloud',
@@ -54,9 +54,9 @@ export const projectDetails = {
     tags: ['Java', 'JDBC', 'MySQL', 'SQL', 'XML'],
   },
   FireDataSite: {
-    title: 'FireDataSite',
+    title: 'AfterFire',
     summary:
-      'AWS Kiro Buildathon team project: a website built with Kiro that turns the Washington fire dataset into something a fire official can use.',
-    tags: ['Hackathon', 'Kiro', 'Team project'],
+      'AWS Kiro Buildathon team project built with Kiro: a web app that helps Washington wildfire recovery officials map damage assessments, review them, and prepare draft recovery reports.',
+    tags: ['Hackathon', 'Kiro', 'TypeScript', 'React', 'Leaflet', 'Tailwind CSS'],
   },
 }

@@ -1,14 +1,25 @@
 [
   {
+    "id": 1446137829,
+    "name": "portfolio",
+    "description": "Building out a site for my portfolio ",
+    "language": "JavaScript",
+    "html_url": "https://github.com/0nTheWall/portfolio",
+    "homepage": "http://aidan-ferriera-portfolio.s3-website-us-east-1.amazonaws.com",
+    "fork": false,
+    "size": 0,
+    "pushed_at": "2026-11-04T20:29:50Z"
+  },
+  {
     "id": 1428787049,
     "name": "FireDataSite",
     "description": "Kiro buildathon project where we use kiro to build an website to harness the Washington fire dataset to help a fire official",
-    "language": null,
+    "language": "TypeScript",
     "html_url": "https://github.com/0nTheWall/FireDataSite",
     "homepage": null,
     "fork": false,
     "size": 0,
-    "pushed_at": "2026-10-21T18:37:55Z"
+    "pushed_at": "2026-11-04T20:28:17Z"
   },
   {
     "id": 1219514497,

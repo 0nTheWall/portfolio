@@ -35,6 +35,11 @@ describe('toProjects', () => {
     expect(project).toMatchObject({ summary: 'No description yet.', tags: [], empty: true })
   })
 
+  it('does not call a repo empty while GitHub has not updated its size yet', () => {
+    const [project] = toProjects([repo({ size: 0, language: 'TypeScript' })])
+    expect(project.empty).toBe(false)
+  })
+
   it('puts featured repos first, then the most recently pushed', () => {
     const projects = toProjects(
       [
